@@ -27,9 +27,9 @@ jobs:
     name: Lint
     steps:
       - name: Check out source repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Set up Python environment
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
         with:
           python-version: "3.8"
       # Install specific flake8 version (this step is not required. Default is "latest").
@@ -37,7 +37,7 @@ jobs:
       # Install flake8 extensions (this step is not required. Default is "None").
       - run: pip install flake8-docstrings flake8-simplify flake8-unused-arguments flake8-quotes
       - name: flake8 Lint
-        uses: reviewdog/action-flake8@v3
+        uses: reviewdog/action-flake8@b65981e158319f08cb7d0132f28bc0081e110adc # v3.15.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
