@@ -31,7 +31,7 @@ jobs:
       - name: Set up Python environment
         uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
         with:
-          python-version: "3.8"
+          python-version: "3.14"
       # Install specific flake8 version (this step is not required. Default is "latest").
       - run: pip install flake8==6.0.0
       # Install flake8 extensions (this step is not required. Default is "None").
